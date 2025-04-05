@@ -12,6 +12,7 @@ import {
   faTwitter, 
   faLinkedin 
 } from '@fortawesome/free-brands-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 interface FormData {
   name: string;
@@ -19,8 +20,10 @@ interface FormData {
   message: string;
 }
 
+
+
 interface SocialLink {
-  icon: any;
+  icon: IconDefinition;
   url: string;
 }
 

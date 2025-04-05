@@ -10,7 +10,7 @@ interface HeaderProps {
   activeSection: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
+const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const { totalItems } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -20,7 +20,6 @@ const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 100);
@@ -30,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close menu when clicking outside
+ 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -47,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Handle responsive menu
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) closeMenu();
@@ -57,7 +56,6 @@ const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Smooth scroll handler
   const handleSmoothScroll = (e: React.MouseEvent, sectionId: string) => {
     e.preventDefault();
     const section = document.querySelector(sectionId);
@@ -163,7 +161,3 @@ const Header: React.FC<HeaderProps> = ({ cartCount, activeSection }) => {
 };
 
 export default Header;
-
-// function useCart(): { totalItems: any; } {
-//   throw new Error('Function not implemented.');
-// }

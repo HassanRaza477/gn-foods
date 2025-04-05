@@ -9,7 +9,7 @@ import Header from '@/components/header';
 
 const menuData = [
   {
-    id: 1,
+    _id: 1,
     category: "fastfood",
     name: "Shawarma Roll",
     description: "Thinly sliced chicken or beef wrapped in pita bread with garlic sauce.",
@@ -17,7 +17,7 @@ const menuData = [
     image: "roll.jpg"
   },
   {
-    id: 2,
+    _id: 2,
     category: "fastfood",
     name: "Zinger Burger",
     price: "300 - 500",
@@ -25,7 +25,7 @@ const menuData = [
     image: "zinger.webp"
   },
   {
-    id: 3,
+    _id: 3,
     category: "fastfood",
     name: "Chicken Tikka Pizza",
     description: "A fusion of traditional chicken tikka flavors with a cheesy pizza base.",
@@ -33,7 +33,7 @@ const menuData = [
     image: "pizza.jpg"
   },
   {
-    id: 4,
+    _id: 4,
     category: "fastfood",
     name: "Beef Burger",
     description: "A juicy beef patty with cheese, lettuce, and sauces in a toasted bun.",
@@ -41,7 +41,7 @@ const menuData = [
     image: "beef.jpg"
   },
   {
-    id: 5,
+    _id: 5,
     category: "fastfood",
     name: "Loaded Fries",
     description: "Crispy fries topped with cheese, sauces, and spices.",
@@ -49,7 +49,7 @@ const menuData = [
     image: "fries.webp"
   },
   {
-    id: 6,
+    _id: 6,
     category: "fastfood",
     name: "Chicken Fajita Wrap",
     description: "Grilled chicken with onions, bell peppers, and spicy sauce in a tortilla.",
@@ -57,7 +57,7 @@ const menuData = [
     image: "wrap.jpg"
   },
   {
-    id: 7,
+    _id: 7,
     category: "fastfood",
     name: "Chapli Burger",
     description: "A fusion of the traditional Pakistani chapli kebab with burger buns and sauces.",
@@ -65,7 +65,7 @@ const menuData = [
     image: "chapli.webp"
   },
   {
-    id: 8,
+    _id: 8,
     category: "fastfood",
     name: "Crispy Fried Chicken",
     description: "Spicy, crunchy, deep-fried chicken pieces.",
@@ -73,7 +73,7 @@ const menuData = [
     image: "fried.jpg"
   },
   {
-    id: 9,
+    _id: 9,
     category: "fastfood",
     name: "Stuffed Paratha Roll",
     description: "A crispy paratha filled with spicy chicken, beef, or vegetables.",
@@ -81,7 +81,7 @@ const menuData = [
     image: "paratha.jpg"
   },
   {
-    id: 10,
+    _id: 10,
     category: "bbq",
     name: "Seekh Kebabs",
     description: "Minced beef or chicken mixed with spices, shaped onto skewers, and grilled to perfection.",
@@ -89,7 +89,7 @@ const menuData = [
     image: "seekh.jpg"
   },
   {
-    id: 11,
+    _id: 11,
     category: "bbq",
     name: "Beef Bihari Boti",
     description: "Tender beef pieces marinated in a rich, spicy, and creamy bihari-style masala, grilled over open flames.",
@@ -97,7 +97,7 @@ const menuData = [
     image: "bihari.webp"
   },
   {
-    id: 12,
+    _id: 12,
     category: "bbq",
     name: "Malai Boti",
     description: "Soft and juicy boneless chicken pieces marinated in a creamy, mildly spiced mixture and grilled.",
@@ -105,7 +105,7 @@ const menuData = [
     image: "malai.avif"
   },
   {
-    id: 13,
+    _id: 13,
     category: "bbq",
     name: "Reshmi Kebabs",
     description: "Delicate, silky-textured chicken kebabs made with a smooth blend of minced chicken and cream.",
@@ -113,7 +113,7 @@ const menuData = [
     image: "reshmi.jpg"
   },
   {
-    id: 15,
+    _id: 15,
     category: "bbq",
     name: "Gola Kebabs",
     description: "Round-shaped, juicy beef kebabs infused with aromatic spices and grilled to smoky perfection.",
@@ -121,7 +121,7 @@ const menuData = [
     image: "gola.jpg"
   },
   {
-    id: 16,
+    _id: 16,
     category: "bbq",
     name: "Mutton Chops",
     description: "Succulent mutton chops marinated in traditional spices and grilled until tender and flavorful.",
@@ -129,7 +129,7 @@ const menuData = [
     image: "mutton.jpg"
   },
   {
-    id: 17,
+    _id: 17,
     category: "bbq",
     name: "Chapli Kebab",
     description: "A crispy, spicy, and juicy kebab made with minced beef, coriander, and tomatoes, grilled on a flat pan.",
@@ -137,7 +137,7 @@ const menuData = [
     image: "chapli2.webp"
   },
   {
-    id: 18,
+    _id: 18,
     category: "bbq",
     name: "Fish Tikka",
     description: "Fresh fish fillets marinated in spicy masala and cooked over charcoal for a smoky flavor.",
@@ -145,7 +145,7 @@ const menuData = [
     image: "fish.jpg"
   },
   {
-    id: 19,
+    _id: 19,
     category: "bbq",
     name: "Chicken Tikka",
     description: "A classic BBQ dish with bone-in chicken marinated in yogurt, spices, and grilled over charcoal.",
@@ -153,7 +153,7 @@ const menuData = [
     image: "tikka2.jpg"
   },
   {
-    id: 20,
+    _id: 20,
     category: "desi",
     name: "Biryani",
     description: "A fragrant rice dish cooked with spiced meat (chicken, beef, or mutton), saffron, and herbs.",
@@ -161,7 +161,7 @@ const menuData = [
     image: "biryani.avif"
   },
   {
-    id: 21,
+    _id: 21,
     category: "desi",
     name: "Nihari",
     description: "A slow-cooked, rich and spicy beef or mutton stew, often eaten with naan.",
@@ -169,7 +169,7 @@ const menuData = [
     image: "nihari.jpg"
   },
   {
-    id: 22,
+    _id: 22,
     category: "desi",
     name: "Haleem",
     description: "A thick, flavorful stew made of wheat, barley, lentils, and slow-cooked meat.",
@@ -177,7 +177,7 @@ const menuData = [
     image: "haleem.webp"
   },
   {
-    id: 23,
+    _id: 23,
     category: "desi",
     name: "Paya",
     description: "A traditional soup-like dish made from slow-cooked trotters (goat or cow), served with naan.",
@@ -185,7 +185,7 @@ const menuData = [
     image: "paya.jpg"
   },
   {
-    id: 24,
+    _id: 24,
     category: "desi",
     name: "Karahi",
     description: "A spicy, tomato-based meat dish (chicken, mutton, or beef) cooked in a wok-style pan.",
@@ -193,7 +193,7 @@ const menuData = [
     image: "karahi.jpg"
   },
   {
-    id: 25,
+    _id: 25,
     category: "desi",
     name: "Daal Chawal",
     description: "Simple yet delicious lentils cooked with spices, served with steamed rice.",
@@ -201,7 +201,7 @@ const menuData = [
     image: "daal.jpg"
   },
   {
-    id: 26,
+    _id: 26,
     category: "desi",
     name: "Pulao",
     description: "A simple yet flavorful rice dish made with spices and meat or vegetables.",
@@ -234,9 +234,13 @@ const MenuPage = () => {
     (item) => activeCategory === "all" || item.category === activeCategory
   );
 
-  const handleAddToCart = (item: any) => {
-    addToCart(item);
-    alert(`${item.name} added to cart!`);
+  const handleAddToCart = (item: { _id: number; name: string; price: string; description: string; image: string; category: string }) => {
+      addToCart({ 
+        ...item, 
+        _id: item._id.toString(), 
+        price: parseFloat(item.price.split(" ")[0]) 
+      });
+      alert(`${item.name} added to cart!`);
   };
 
   return (
@@ -288,7 +292,7 @@ const MenuPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
           {filteredMenu.map((item) => (
             <div
-              key={item.id}
+              key={item._id}
               className="border border-gray-700 rounded-lg overflow-hidden bg-neutral-900 shadow-md text-white"
             >
               <div className="w-full h-48 relative">

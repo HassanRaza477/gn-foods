@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { 
   faRing, 
   faBuildingColumns, 
@@ -7,8 +8,10 @@ import {
   faCakeCandles 
 } from '@fortawesome/free-solid-svg-icons';
 
+
+
 interface Service {
-  icon: any;
+  icon: IconDefinition;
   title: string;
   description: string;
 }
@@ -21,7 +24,7 @@ const ServicesSection = () => {
     {
       icon: faRing,
       title: 'Luxury Weddings',
-      description: 'Tailored menus and flawless execution for your once-in-a-lifetime celebration.'
+      description: 'Tailored menus and flawless execution for your once in a lifetime celebration.'
     },
     {
       icon: faBuildingColumns,
@@ -36,7 +39,7 @@ const ServicesSection = () => {
     {
       icon: faCakeCandles,
       title: 'Celebrations',
-      description: 'Custom-designed menus for birthdays, anniversaries, and special milestones.'
+      description: 'Custom designed menus for birthdays, anniversaries, and special milestones.'
     }
   ];
 

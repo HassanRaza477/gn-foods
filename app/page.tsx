@@ -11,7 +11,7 @@ import ContactSection from '@/components/contact-section';
 import { CartProvider } from '@/components/CartContext';
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection,] = useState('home');
   const [cartCount, setCartCount] = useState(0);
 
   return (
